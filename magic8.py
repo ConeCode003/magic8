@@ -1,9 +1,12 @@
+#importing necessary library
 import random
 
+#name and question input
 name = "Nemanja"
 question = "Will I have a decent girlfriend?"
 answer = ""
 
+#using dict key to access the necessary value
 try:
     random_number = random.randint(1, 9)
     responses = {
@@ -19,6 +22,7 @@ try:
     }
     answer = responses.get(random_number, "Error")
 
+    #name and question input check
     if not name and not question:
         print("You did not input question and name.")
     elif not name:
